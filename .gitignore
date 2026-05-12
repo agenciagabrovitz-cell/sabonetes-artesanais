@@ -1,0 +1,14 @@
+node_modules
+dist
+dist-ssr
+*.local
+.vscode
+.DS_Store
+.env
+.gemini
+.gemini.json
+package-lock.json
+temp.html
+temp2.html
+extract.cjs
+extract.js
