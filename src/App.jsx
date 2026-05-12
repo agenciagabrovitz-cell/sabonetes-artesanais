@@ -419,8 +419,7 @@ function App() {
             </div>
             
             </div>
-          </div>
-        </FadeUp>
+          </FadeUp>
 
         {/* Divisor SVG - Onda Elegante para Oferta */}
         <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
