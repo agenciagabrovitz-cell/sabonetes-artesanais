@@ -88,30 +88,12 @@ function App() {
     window.location.href = "https://ggcheckout.app/checkout/v5/098OkojSDd9lwSy2luUj";
   };
 
-  useEffect(() => {
-    const script1 = document.createElement("script");
-    script1.src = "https://fast.wistia.com/player.js";
-    script1.async = true;
-    document.body.appendChild(script1);
-
-    const script2 = document.createElement("script");
-    script2.src = "https://fast.wistia.com/embed/6g50wlw8wp.js";
-    script2.async = true;
-    script2.type = "module";
-    document.body.appendChild(script2);
-
-    return () => {
-      if (document.body.contains(script1)) document.body.removeChild(script1);
-      if (document.body.contains(script2)) document.body.removeChild(script2);
-    };
-  }, []);
-
   return (
     <div className="min-h-screen font-inter bg-dark text-white selection:bg-primary selection:text-white pb-0">
       {/* SEÇÃO 1 — BARRA DE URGÊNCIA */}
-      <div className="fixed top-0 left-0 w-full bg-primary z-50 py-[10px] px-4 text-center">
+      <div className="fixed top-0 left-0 w-full bg-primary z-50 py-[10px] px-4 text-center border-b-4 border-yellow-400">
         <p className="text-white font-bold text-[13px] uppercase tracking-wide">
-          ⚡ ATENÇÃO — Essa oferta pode sair do ar a qualquer momento
+          ⚡ ATENÇÃO — Essa oferta pode sair do ar a qualquer momento (PÁGINA ATUALIZADA)
         </p>
       </div>
 
@@ -153,14 +135,6 @@ function App() {
           </h2>
           <div className="w-full max-w-[450px] mx-auto md:px-5">
             <div className="relative w-full shadow-[0_0_48px_rgba(232,0,111,0.4)] md:rounded-[20px] overflow-hidden bg-[#111]">
-              <style dangerouslySetInnerHTML={{ __html: `
-                wistia-player[media-id='6g50wlw8wp']:not(:defined) { 
-                  background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/6g50wlw8wp/swatch'); 
-                  display: block; 
-                  filter: blur(5px); 
-                  padding-top:177.78%; 
-                }
-              `}} />
               <wistia-player media-id="6g50wlw8wp" aspect="0.5625"></wistia-player>
             </div>
           </div>
