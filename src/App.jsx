@@ -367,36 +367,36 @@ function App() {
               {[
                 {
                   name: "Regina Almeida",
-                  img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150&h=150&auto=format&fit=crop",
+                  img: "https://rugasnuncamais.vercel.app/depoimento-1.png",
                   text: "Gente, eu estava desempregada e resolvi arriscar esses R$10. Em 2 semanas já vendi meu primeiro kit de lavanda! As receitas são perfeitas e explicam tudo direitinho. 😍",
                   likes: 47,
                   time: "12 min"
                 },
                 {
                   name: "Patrícia Mendonça",
-                  img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=150&h=150&auto=format&fit=crop",
+                  img: "https://rugasnuncamais.vercel.app/depoimento-3.png",
                   text: "Comprei ontem e já fiz a primeira receita de aveia. A textura ficou incrível e o cheiro tomou conta da casa toda. Ansiosa para começar a vender!",
                   likes: 32,
                   time: "45 min"
                 },
                 {
                   name: "Sandra Oliveira",
-                  img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=150&h=150&auto=format&fit=crop",
+                  img: "https://rugasnuncamais.vercel.app/depoimento-4.png",
                   text: "Já tinha tentado outras receitas da internet mas nunca davam o ponto certo. Esse guia é diferente, as medidas são exatas. Valeu cada centavo.",
                   likes: 28,
                   time: "2 h"
                 },
                 {
                   name: "Cláudia Rezende",
-                  img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=150&h=150&auto=format&fit=crop",
+                  img: "https://rugasnuncamais.vercel.app/depoimento-6.png",
                   text: "Achei que era mais uma propaganda, mas por R$10 não custava tentar. Resultado surpreendente! Minhas amigas já estão todas perguntando onde comprei os sabonetes.",
                   likes: 19,
                   time: "3 h"
                 },
                 {
                   name: "Marisa Tavares",
-                  img: "https://images.unsplash.com/photo-1567532939604-b6c5b0ad2e01?q=80&w=150&h=150&auto=format&fit=crop",
-                  text: "Estou na segunda semana e já me sinto muito mais confiante. Começar um negócio com apenas 10 reais foi a melhor decisão que tomei esse ano. ❤️",
+                  img: "https://rugasnuncamais.vercel.app/depoimento-7.png",
+                  text: "Estou na segunda semana e já me sinto muito mais confiante. Começar um negócio com apenas 10 reais foi a melhor decision que tomei esse ano. ❤️",
                   likes: 15,
                   time: "5 h"
                 }
