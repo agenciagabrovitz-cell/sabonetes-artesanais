@@ -158,7 +158,7 @@ function App() {
       </section>
 
       {/* SEÇÃO 4 — BLOCO DE DOR */}
-      <section className="bg-[#0a0a0a] py-[80px] px-[20px] flex flex-col items-center relative overflow-hidden">
+      <section className="bg-[#0a0a0a] pt-[80px] pb-[120px] px-[20px] flex flex-col items-center relative overflow-hidden">
         <FadeUp>
           <h2 className="font-oswald text-white font-bold text-[32px] md:text-[42px] text-center max-w-[700px] mx-auto mb-12 leading-tight">
             Pare de buscar uma renda extra que só complica sua vida
@@ -182,10 +182,17 @@ function App() {
             </p>
           </div>
         </FadeUp>
+        
+        {/* Divisor SVG - Onda Suave para Branco */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] transform rotate-180">
+          <svg className="relative block w-[calc(100%+1.3px)] h-[60px]" viewBox="0 0 1200 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V120H321.39Z" fill="#ffffff"></path>
+          </svg>
+        </div>
       </section>
 
       {/* SEÇÃO 5 — O QUE É ESSE MÉTODO */}
-      <section className="bg-white py-[100px] px-[20px] flex flex-col items-center relative overflow-hidden">
+      <section className="bg-white py-[120px] px-[20px] flex flex-col items-center relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
         
         <FadeUp>
@@ -200,53 +207,37 @@ function App() {
             </p>
           </div>
         </FadeUp>
+
+        {/* Divisor SVG - Curva Suave para Preto */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+          <svg className="relative block w-[calc(100%+1.3px)] h-[70px]" viewBox="0 0 1200 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" fill="#0D0D0D"></path>
+          </svg>
+        </div>
       </section>
 
-      {/* SEÇÃO 6 — RECEITAS */}
-      <section className="bg-white py-[80px] px-[20px] flex flex-col items-center">
+      {/* SEÇÃO 6 — BENEFÍCIOS (Pequeno Destaque) */}
+      <section className="bg-[#0D0D0D] py-16 px-[20px] relative overflow-hidden">
         <FadeUp>
-          <div className="text-center mb-16">
-            <h2 className="font-oswald text-[#0D0D0D] font-bold text-[32px] md:text-[42px] mb-4">
-              O que você vai aprender a criar...
-            </h2>
-            <p className="text-[#666] max-w-[600px] mx-auto text-[17px]">Uma pequena amostra das 30 receitas exclusivas que estão te esperando.</p>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 max-w-[1100px] mx-auto">
-            {receitas.map((receita, i) => (
-              <motion.div 
-                key={i} 
-                whileHover={{ scale: 1.03 }}
-                className="flex flex-col items-center group"
-              >
-                <div className="relative w-full aspect-square rounded-[30px] overflow-hidden shadow-xl mb-6 bg-[#f5f5f5]">
-                  <img 
-                    src={receita.img} 
-                    alt={receita.name}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                    <span className="text-white text-[12px] font-bold uppercase tracking-widest">Ver Receita</span>
-                  </div>
-                </div>
-                <p className="font-oswald font-bold text-[#111] text-[16px] md:text-[18px] text-center leading-tight">
-                  {receita.name}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-          
-          <div className="mt-16 bg-primary/5 border border-primary/10 rounded-2xl p-6 text-center max-w-[600px] mx-auto">
-            <p className="font-inter font-bold text-primary text-[18px]">
-              ✨ E mais 22 receitas exclusivas de alto lucro incluídas!
-            </p>
+          <div className="max-w-[900px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div className="p-6">
+              <div className="text-primary font-oswald font-bold text-4xl mb-2">100%</div>
+              <p className="text-[#888] text-sm uppercase tracking-widest font-bold">Prático e Passo a Passo</p>
+            </div>
+            <div className="p-6 border-y md:border-y-0 md:border-x border-white/10">
+              <div className="text-primary font-oswald font-bold text-4xl mb-2">Lucro</div>
+              <p className="text-[#888] text-sm uppercase tracking-widest font-bold">Desde o Primeiro Dia</p>
+            </div>
+            <div className="p-6">
+              <div className="text-primary font-oswald font-bold text-4xl mb-2">Vitalício</div>
+              <p className="text-[#888] text-sm uppercase tracking-widest font-bold">Acesso para Sempre</p>
+            </div>
           </div>
         </FadeUp>
       </section>
 
       {/* SEÇÃO 7 — O QUE VOCÊ RECEBE */}
-      <section className="bg-dark py-[80px] px-[20px] flex flex-col items-center relative overflow-hidden">
+      <section className="bg-[#0D0D0D] py-[100px] px-[20px] flex flex-col items-center relative overflow-hidden">
         {/* Elementos decorativos de fundo */}
         <div className="absolute top-0 left-1/4 w-[300px] h-[300px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
         <div className="absolute bottom-0 right-1/4 w-[300px] h-[300px] bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
@@ -355,6 +346,13 @@ function App() {
         </FadeUp>
       </section>
 
+      {/* Divisor SVG - Transição Suave para Cinza Facebook */}
+      <div className="w-full overflow-hidden leading-[0] bg-[#111]">
+        <svg className="relative block w-[calc(100%+1.3px)] h-[50px]" viewBox="0 0 1200 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0H321.39Z" fill="#f0f2f5" transform="rotate(180 600 60)"></path>
+        </svg>
+      </div>
+
       {/* SEÇÃO 9 — DEPOIMENTOS (ESTILO FACEBOOK) */}
       <section className="bg-[#f0f2f5] py-[80px] px-[20px] flex justify-center">
         <FadeUp>
@@ -427,11 +425,18 @@ function App() {
               ))}
             </div>
             
-            <div className="mt-8 border-t border-[#ddd] pt-6 text-center">
-              <button className="text-[#1877f2] font-bold text-[14px] hover:underline">Carregar mais comentários...</button>
             </div>
           </div>
         </FadeUp>
+
+        {/* Divisor SVG - Onda Elegante para Oferta */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+          <svg className="relative block w-[calc(100%+1.3px)] h-[80px]" viewBox="0 0 1200 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5,73.84-4.36,147.54,16.88,218.2,35.26,69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113,14.29,1200,52.47V0Z" opacity=".25" fill="#e8006f"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5V0Z" opacity=".5" fill="#e8006f"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="#0a0a0a"></path>
+          </svg>
+        </div>
       </section>
 
       {/* SEÇÃO 10 — OFERTA PRINCIPAL */}
