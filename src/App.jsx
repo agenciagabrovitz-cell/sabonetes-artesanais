@@ -91,9 +91,9 @@ function App() {
   return (
     <div className="min-h-screen font-inter bg-dark text-white selection:bg-primary selection:text-white pb-0">
       {/* SEÇÃO 1 — BARRA DE URGÊNCIA */}
-      <div className="fixed top-0 left-0 w-full bg-primary z-50 py-[10px] px-4 text-center border-b-4 border-yellow-400">
+      <div className="fixed top-0 left-0 w-full bg-primary z-50 py-[10px] px-4 text-center">
         <p className="text-white font-bold text-[13px] uppercase tracking-wide">
-          ⚡ ATENÇÃO — Essa oferta pode sair do ar a qualquer momento (PÁGINA ATUALIZADA)
+          ⚡ ATENÇÃO — Essa oferta pode sair do ar a qualquer momento
         </p>
       </div>
 
@@ -347,7 +347,7 @@ function App() {
       </div>
 
       {/* SEÇÃO 9 — DEPOIMENTOS (ESTILO FACEBOOK) */}
-      <section className="bg-[#f0f2f5] py-[80px] px-[20px] flex justify-center">
+      <section className="bg-[#f0f2f5] py-[80px] px-[20px] flex justify-center relative overflow-hidden">
         <FadeUp>
           <div className="max-w-[750px] w-full bg-white rounded-lg shadow-md p-6 md:p-8">
             <h2 className="text-[#1c1e21] font-bold text-[20px] border-b border-[#ddd] pb-4 mb-6">
