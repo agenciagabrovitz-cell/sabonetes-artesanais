@@ -88,12 +88,28 @@ function App() {
     window.location.href = "https://ggcheckout.app/checkout/v5/098OkojSDd9lwSy2luUj";
   };
 
+  const [timeLeft, setTimeLeft] = useState(900); // 15 minutos em segundos
+
+  useEffect(() => {
+    if (timeLeft <= 0) return;
+    const timer = setInterval(() => {
+      setTimeLeft(prev => prev - 1);
+    }, 1000);
+    return () => clearInterval(timer);
+  }, [timeLeft]);
+
+  const formatTime = (seconds) => {
+    const mins = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+  };
+
   return (
     <div className="min-h-screen font-inter bg-dark text-white selection:bg-primary selection:text-white pb-0">
       {/* SEÇÃO 1 — BARRA DE URGÊNCIA */}
       <div className="fixed top-0 left-0 w-full bg-primary z-50 py-[10px] px-4 text-center">
-        <p className="text-white font-bold text-[13px] uppercase tracking-wide">
-          ⚡ ATENÇÃO — Essa oferta pode sair do ar a qualquer momento
+        <p className="text-white font-bold text-[13px] uppercase tracking-wide flex items-center justify-center gap-2">
+          ⚡ ATENÇÃO — Essa oferta expira em: <span className="bg-white text-primary px-2 py-0.5 rounded ml-1 tabular-nums">{formatTime(timeLeft)}</span>
         </p>
       </div>
 
