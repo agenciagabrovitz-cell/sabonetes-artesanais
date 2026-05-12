@@ -88,6 +88,24 @@ function App() {
     window.location.href = "https://ggcheckout.app/checkout/v5/098OkojSDd9lwSy2luUj";
   };
 
+  useEffect(() => {
+    const script1 = document.createElement("script");
+    script1.src = "https://fast.wistia.com/player.js";
+    script1.async = true;
+    document.body.appendChild(script1);
+
+    const script2 = document.createElement("script");
+    script2.src = "https://fast.wistia.com/embed/6g50wlw8wp.js";
+    script2.async = true;
+    script2.type = "module";
+    document.body.appendChild(script2);
+
+    return () => {
+      if (document.body.contains(script1)) document.body.removeChild(script1);
+      if (document.body.contains(script2)) document.body.removeChild(script2);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen font-inter bg-dark text-white selection:bg-primary selection:text-white pb-0">
       {/* SEÇÃO 1 — BARRA DE URGÊNCIA */}
@@ -116,7 +134,7 @@ function App() {
           </h1>
           
           <p className="font-inter text-[#aaa] text-[18px] md:text-[20px] max-w-[650px] leading-[1.6] mx-auto mb-10">
-            Descubra o segredo dos sabonetes que vendem como água. O passo a passo completo para você lucrar em casa — <span className="text-white font-bold underline decoration-primary/50">por apenas R$10.</span>
+            Descubra o segredo dos sabonetes que vendem como água. O passo a passo completo para você lucrar em casa — <span className="text-white font-bold underline decoration-primary/50">por um valor promocional exclusivo.</span>
           </p>
           
           <div className="flex flex-wrap justify-center gap-6 text-[#666] text-[14px] font-medium">
@@ -133,16 +151,17 @@ function App() {
           <h2 className="font-oswald text-white font-bold text-[20px] text-center pt-[24px] pb-[16px] px-[20px]">
             Assista isso antes de fechar essa página:
           </h2>
-          <div className="w-full max-w-[800px] mx-auto md:px-5">
-            <div className="relative w-full aspect-video shadow-[0_0_48px_rgba(232,0,111,0.4)] md:rounded-[12px] overflow-hidden">
-              <iframe 
-                className="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/LG12oyld8Jc?autoplay=0&rel=0" 
-                title="Vídeo de Vendas"
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowFullScreen
-              ></iframe>
+          <div className="w-full max-w-[450px] mx-auto md:px-5">
+            <div className="relative w-full shadow-[0_0_48px_rgba(232,0,111,0.4)] md:rounded-[20px] overflow-hidden bg-[#111]">
+              <style dangerouslySetInnerHTML={{ __html: `
+                wistia-player[media-id='6g50wlw8wp']:not(:defined) { 
+                  background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/6g50wlw8wp/swatch'); 
+                  display: block; 
+                  filter: blur(5px); 
+                  padding-top:177.78%; 
+                }
+              `}} />
+              <wistia-player media-id="6g50wlw8wp" aspect="0.5625"></wistia-player>
             </div>
           </div>
           <div className="mt-8 px-5 w-full flex flex-col items-center">
@@ -178,7 +197,7 @@ function App() {
           </div>
           <div className="bg-gradient-to-r from-primary/20 to-primary/5 border border-primary/20 rounded-[20px] p-8 mt-12 max-w-[600px] w-full mx-auto text-center">
             <p className="text-white font-bold text-[20px] md:text-[22px]">
-              Isso está prestes a mudar. E o primeiro passo custa apenas <span className="text-primary">R$10.</span>
+              Isso está prestes a mudar. E o primeiro passo é <span className="text-primary">mais acessível do que você imagina.</span>
             </p>
           </div>
         </FadeUp>
@@ -245,7 +264,7 @@ function App() {
         <FadeUp>
           <div className="text-center mb-16">
             <h2 className="font-oswald text-white font-bold text-[32px] md:text-[42px] mb-4">
-              Tudo que você recebe hoje por <span className="text-primary">R$10</span>
+              Tudo que você recebe hoje no <span className="text-primary">Kit Completo</span>
             </h2>
             <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
           </div>
@@ -366,7 +385,7 @@ function App() {
                 {
                   name: "Regina Almeida",
                   img: "https://rugasnuncamais.vercel.app/depoimento-1.png",
-                  text: "Gente, eu estava desempregada e resolvi arriscar esses R$10. Em 2 semanas já vendi meu primeiro kit de lavanda! As receitas são perfeitas e explicam tudo direitinho. 😍",
+                  text: "Gente, eu estava desempregada e resolvi arriscar esse pequeno investimento. Em 2 semanas já vendi meu primeiro kit de lavanda! As receitas são perfeitas e explicam tudo direitinho. 😍",
                   likes: 47,
                   time: "12 min"
                 },
@@ -387,14 +406,14 @@ function App() {
                 {
                   name: "Cláudia Rezende",
                   img: "https://rugasnuncamais.vercel.app/depoimento-6.png",
-                  text: "Achei que era mais uma propaganda, mas por R$10 não custava tentar. Resultado surpreendente! Minhas amigas já estão todas perguntando onde comprei os sabonetes.",
+                  text: "Achei que era mais uma propaganda, mas por esse valor não custava tentar. Resultado surpreendente! Minhas amigas já estão todas perguntando onde comprei os sabonetes.",
                   likes: 19,
                   time: "3 h"
                 },
                 {
                   name: "Marisa Tavares",
                   img: "https://rugasnuncamais.vercel.app/depoimento-7.png",
-                  text: "Estou na segunda semana e já me sinto muito mais confiante. Começar um negócio com apenas 10 reais foi a melhor decision que tomei esse ano. ❤️",
+                  text: "Estou na segunda semana e já me sinto muito mais confiante. Começar um negócio com esse investimento foi a melhor decisão que tomei esse ano. ❤️",
                   likes: 15,
                   time: "5 h"
                 }
@@ -525,7 +544,7 @@ function App() {
             />
             <AccordionItem 
               title="Por que está tão barato?" 
-              content="Porque queremos que o preço nunca seja obstáculo. Nosso objetivo é que você aplique e veja resultado. R$10 não tem desculpa pra ficar de fora." 
+              content="Porque queremos que o preço nunca seja obstáculo. Nosso objetivo é que você aplique e veja resultado. O valor é simbólico para que ninguém fique de fora." 
             />
             <AccordionItem 
               title="E se eu não gostar?" 
@@ -542,7 +561,7 @@ function App() {
             Ainda está esperando o quê?
           </h2>
           <p className="font-inter text-[#999] text-[15px] max-w-[440px] mx-auto my-[12px]">
-            Cada dia sem agir é mais um dia sem renda extra. Por R$10 você não tem nada a perder — e tem muito a ganhar.
+            Cada dia sem agir é mais um dia sem renda extra. Você não tem nada a perder — e tem muito a ganhar.
           </p>
           <button 
             onClick={goToCheckout}
