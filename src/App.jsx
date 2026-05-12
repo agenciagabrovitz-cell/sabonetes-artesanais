@@ -109,7 +109,7 @@ function App() {
       {/* SEÇÃO 1 — BARRA DE URGÊNCIA */}
       <div className="fixed top-0 left-0 w-full bg-primary z-50 py-[10px] px-4 text-center">
         <p className="text-white font-bold text-[13px] uppercase tracking-wide flex items-center justify-center gap-2">
-          ⚡ ATENÇÃO — Essa oferta expira em: <span className="bg-white text-primary px-2 py-0.5 rounded ml-1 tabular-nums">{formatTime(timeLeft)}</span>
+          ⚡ ATENÇÃO — Essa oferta pode sair do ar a qualquer momento <span className="bg-white text-primary px-2 py-0.5 rounded ml-1 tabular-nums">{formatTime(timeLeft)}</span>
         </p>
       </div>
 
