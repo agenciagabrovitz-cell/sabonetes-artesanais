@@ -154,9 +154,9 @@ function App() {
           <div className="mt-8 px-5 w-full flex flex-col items-center">
             <button 
               onClick={goToCheckout}
-              className="bg-accent text-black font-oswald font-bold text-[18px] md:text-[22px] uppercase py-[20px] px-8 rounded-full w-full md:w-auto max-w-full mx-auto shadow-[0_10px_30px_rgba(255,214,0,0.3)] hover:scale-105 transition-transform duration-200 whitespace-nowrap"
+              className="bg-[#FFD600] text-black font-oswald font-bold text-[18px] md:text-[22px] uppercase py-[18px] px-8 rounded-full w-full md:w-auto max-w-full mx-auto shadow-[0_6px_0_#b39700] hover:shadow-[0_4px_0_#b39700] active:translate-y-[2px] active:shadow-none transition-all duration-100 whitespace-nowrap"
             >
-              QUERO ACESSO IMEDIATO
+              Quero Acesso Imediato
             </button>
             <div className="text-primary text-3xl mt-4 pulsing-arrow font-bold">↓</div>
           </div>
@@ -484,14 +484,12 @@ function App() {
               <p className="text-primary font-bold text-[14px] mt-4 uppercase tracking-[3px]">Pagamento Único · Sem Mensalidades</p>
             </div>
 
-            <motion.button 
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
+            <button 
               onClick={goToCheckout}
-              className="bg-accent text-black font-oswald font-bold text-[20px] md:text-[26px] uppercase py-[24px] px-10 rounded-full w-full max-w-full shadow-[0_15px_40px_rgba(255,214,0,0.25)] hover:shadow-[0_20px_50px_rgba(255,214,0,0.35)] transition-all duration-300 whitespace-nowrap"
+              className="bg-[#FFD600] text-black font-oswald font-bold text-[20px] md:text-[26px] uppercase py-[20px] px-10 rounded-full w-full max-w-full shadow-[0_8px_0_#b39700] hover:shadow-[0_5px_0_#b39700] active:translate-y-[3px] active:shadow-none transition-all duration-100 whitespace-nowrap"
             >
-              GARANTIR MINHA VAGA AGORA
-            </motion.button>
+              QUERO MEU ACESSO AGORA!
+            </button>
             
             <div className="mt-12 flex flex-col items-center">
               <div className="flex items-center gap-6 mb-6 grayscale opacity-40">
