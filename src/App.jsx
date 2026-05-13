@@ -190,9 +190,9 @@ function App() {
         </FadeUp>
         
         {/* Divisor SVG - Onda Suave para Branco */}
-        <div className="absolute bottom-[-2px] left-[-2%] w-[104%] overflow-hidden leading-[0] transform rotate-180 z-20">
+        <div className="absolute bottom-[-2px] left-[-2%] w-[104%] overflow-hidden leading-[0] z-20">
           <svg className="relative block w-full h-[100px] scale-x-110" viewBox="0 0 1200 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,0 C300,120 900,0 1200,40 V0 H0 Z" fill="#ffffff" transform="rotate(180 600 60)"></path>
+            <path d="M0,120 C300,0 900,120 1200,80 V120 H0 Z" fill="#ffffff"></path>
           </svg>
         </div>
       </section>
@@ -449,9 +449,9 @@ function App() {
         <div className="absolute inset-0 opacity-30 z-[-1]" style={{ background: 'radial-gradient(circle at 50% 50%, #e8006f22 0%, transparent 70%)' }} />
 
         <FadeUp>
-          <div className="max-w-[800px] bg-[#111] border border-white/10 rounded-[32px] p-8 md:p-16 shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative overflow-hidden">
-            {/* Badge de Desconto - Posicionamento Melhorado */}
-            <div className="absolute -top-3 -right-3 bg-primary text-white font-bold text-[14px] px-6 py-2 rounded-full uppercase tracking-widest shadow-[0_10px_20px_rgba(232,0,111,0.4)] z-10 rotate-3">
+          <div className="max-w-[800px] bg-[#111] border border-white/10 rounded-[32px] p-8 md:p-16 shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative">
+            {/* Badge de Desconto - Flutuante e Sem Cortes */}
+            <div className="absolute -top-4 -right-4 bg-primary text-white font-bold text-[16px] px-6 py-2 rounded-lg uppercase tracking-widest shadow-[0_10px_30px_rgba(232,0,111,0.5)] z-20 rotate-6 border-2 border-white/20">
               90% OFF HOJE
             </div>
 
