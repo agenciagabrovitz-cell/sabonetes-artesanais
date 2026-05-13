@@ -154,9 +154,9 @@ function App() {
           <div className="mt-8 px-5 w-full flex flex-col items-center">
             <button 
               onClick={goToCheckout}
-              className="bg-[#FFD600] text-black font-oswald font-bold text-[18px] md:text-[22px] uppercase py-[18px] px-8 rounded-full w-full md:w-auto max-w-full mx-auto shadow-[0_6px_0_#b39700] hover:shadow-[0_4px_0_#b39700] active:translate-y-[2px] active:shadow-none transition-all duration-100 whitespace-nowrap"
+              className="bg-[#FFD600] text-black font-oswald font-bold text-[24px] md:text-[30px] uppercase py-[22px] px-10 rounded-full w-full md:w-auto max-w-full mx-auto shadow-[0_8px_0_#b39700] hover:shadow-[0_6px_0_#b39700] active:translate-y-[4px] active:shadow-none transition-all duration-100 mt-4 block whitespace-nowrap leading-none tracking-tight"
             >
-              Quero Acesso Imediato
+              QUERO ACESSO IMEDIATO
             </button>
             <div className="text-primary text-3xl mt-4 pulsing-arrow font-bold">↓</div>
           </div>
@@ -484,7 +484,7 @@ function App() {
 
             <button 
               onClick={goToCheckout}
-              className="bg-[#FFD600] text-black font-oswald font-bold text-[20px] md:text-[26px] uppercase py-[20px] px-10 rounded-full w-full max-w-full shadow-[0_8px_0_#b39700] hover:shadow-[0_5px_0_#b39700] active:translate-y-[3px] active:shadow-none transition-all duration-100 whitespace-nowrap"
+              className="bg-[#FFD600] text-black font-oswald font-bold text-[28px] md:text-[36px] uppercase py-[18px] px-10 rounded-full w-full max-w-full shadow-[0_8px_0_#b39700] hover:shadow-[0_5px_0_#b39700] active:translate-y-[3px] active:shadow-none transition-all duration-100 whitespace-nowrap leading-none"
             >
               QUERO MEU ACESSO AGORA!
             </button>
