@@ -155,7 +155,7 @@ function App() {
           <div className="mt-8 px-5 w-full flex flex-col items-center">
             <button 
               onClick={goToCheckout}
-              className="bg-[#FFD600] text-black font-oswald font-bold text-[20px] md:text-[30px] uppercase py-[18px] md:py-[22px] px-6 md:px-10 rounded-full w-full md:w-auto max-w-full mx-auto shadow-[0_8px_0_#b39700] hover:shadow-[0_6px_0_#b39700] active:translate-y-[4px] active:shadow-none transition-all duration-100 mt-4 block leading-tight tracking-tight"
+              className="bg-[#FFD600] text-black font-oswald font-bold text-[18px] md:text-[30px] uppercase py-[20px] md:py-[22px] px-8 md:px-10 rounded-full w-full md:w-auto max-w-full mx-auto shadow-[0_8px_0_#b39700] hover:shadow-[0_6px_0_#b39700] active:translate-y-[4px] active:shadow-none transition-all duration-100 mt-4 block whitespace-nowrap leading-none tracking-tight"
             >
               QUERO ACESSO IMEDIATO
             </button>
@@ -485,7 +485,7 @@ function App() {
 
             <button 
               onClick={goToCheckout}
-              className="bg-[#FFD600] text-black font-oswald font-bold text-[22px] md:text-[36px] uppercase py-[16px] md:py-[18px] px-6 md:px-10 rounded-full w-full max-w-full shadow-[0_8px_0_#b39700] hover:shadow-[0_5px_0_#b39700] active:translate-y-[3px] active:shadow-none transition-all duration-100 leading-tight"
+              className="bg-[#FFD600] text-black font-oswald font-bold text-[18px] md:text-[36px] uppercase py-[18px] md:py-[22px] px-8 md:px-10 rounded-full w-full max-w-full shadow-[0_8px_0_#b39700] hover:shadow-[0_5px_0_#b39700] active:translate-y-[3px] active:shadow-none transition-all duration-100 whitespace-nowrap leading-none"
             >
               QUERO MEU ACESSO AGORA!
             </button>
