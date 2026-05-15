@@ -84,9 +84,7 @@ function App() {
     { name: "Sabonete Artesanal Essência de Alecrim", img: "https://i.postimg.cc/KYYbGf34/Receita-08-(1).png" }
   ];
 
-  const goToCheckout = () => {
-    window.location.href = "https://ggcheckout.app/checkout/v5/098OkojSDd9lwSy2luUj";
-  };
+
 
   const [timeLeft, setTimeLeft] = useState(900); // 15 minutos em segundos
 
@@ -152,12 +150,12 @@ function App() {
             </div>
           </div>
           <div className="mt-8 px-5 w-full flex flex-col items-center">
-            <button 
-              onClick={goToCheckout}
-              className="bg-[#FFD600] text-black font-oswald font-bold text-[18px] md:text-[30px] uppercase py-[20px] md:py-[22px] px-8 md:px-10 rounded-full w-full md:w-auto max-w-full mx-auto shadow-[0_8px_0_#b39700] hover:shadow-[0_6px_0_#b39700] active:translate-y-[4px] active:shadow-none transition-all duration-100 mt-4 block whitespace-nowrap leading-none tracking-tight"
+            <a 
+              href="https://ggcheckout.app/checkout/v5/098OkojSDd9lwSy2luUj"
+              className="bg-[#FFD600] text-black font-oswald font-bold text-[18px] md:text-[30px] uppercase py-[20px] md:py-[22px] px-8 md:px-10 rounded-full w-full md:w-auto max-w-full mx-auto shadow-[0_8px_0_#b39700] hover:shadow-[0_6px_0_#b39700] active:translate-y-[4px] active:shadow-none transition-all duration-100 mt-4 flex items-center justify-center whitespace-nowrap leading-none tracking-tight"
             >
               QUERO ACESSO IMEDIATO
-            </button>
+            </a>
             <div className="text-primary text-3xl mt-4 pulsing-arrow font-bold">↓</div>
           </div>
         </FadeUp>
@@ -482,12 +480,12 @@ function App() {
               <p className="text-primary font-bold text-[14px] mt-4 uppercase tracking-[3px]">Pagamento Único · Sem Mensalidades</p>
             </div>
 
-            <button 
-              onClick={goToCheckout}
-              className="bg-[#FFD600] text-black font-oswald font-bold text-[18px] md:text-[36px] uppercase py-[18px] md:py-[22px] px-8 md:px-10 rounded-full w-full max-w-full shadow-[0_8px_0_#b39700] hover:shadow-[0_5px_0_#b39700] active:translate-y-[3px] active:shadow-none transition-all duration-100 whitespace-nowrap leading-none"
+            <a 
+              href="https://ggcheckout.app/checkout/v5/098OkojSDd9lwSy2luUj"
+              className="bg-[#FFD600] text-black font-oswald font-bold text-[18px] md:text-[36px] uppercase py-[18px] md:py-[22px] px-8 md:px-10 rounded-full w-full max-w-full shadow-[0_8px_0_#b39700] hover:shadow-[0_5px_0_#b39700] active:translate-y-[3px] active:shadow-none transition-all duration-100 flex items-center justify-center whitespace-nowrap leading-none"
             >
               QUERO MEU ACESSO AGORA!
-            </button>
+            </a>
             
             <div className="mt-12 flex flex-col items-center">
               <div className="flex items-center gap-6 mb-6 grayscale opacity-40">
@@ -545,12 +543,12 @@ function App() {
           <p className="font-inter text-[#999] text-[15px] max-w-[440px] mx-auto my-[12px]">
             Cada dia sem agir é mais um dia sem renda extra. Você não tem nada a perder — e tem muito a ganhar.
           </p>
-          <button 
-            onClick={goToCheckout}
-            className="bg-accent text-black font-oswald font-bold text-[18px] md:text-[22px] uppercase py-[20px] px-8 rounded-full w-full md:w-auto max-w-full mx-auto shadow-[0_10px_30px_rgba(255,214,0,0.3)] hover:scale-105 transition-transform duration-200 mt-4 block leading-tight"
+          <a 
+            href="https://ggcheckout.app/checkout/v5/098OkojSDd9lwSy2luUj"
+            className="bg-accent text-black font-oswald font-bold text-[18px] md:text-[22px] uppercase py-[20px] px-8 rounded-full w-full md:w-auto max-w-full mx-auto shadow-[0_10px_30px_rgba(255,214,0,0.3)] hover:scale-105 transition-transform duration-200 mt-4 flex items-center justify-center leading-tight"
           >
             QUERO COMEÇAR AGORA
-          </button>
+          </a>
         </FadeUp>
       </section>
 
