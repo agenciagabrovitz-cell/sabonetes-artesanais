@@ -107,9 +107,9 @@ function App() {
   return (
     <div className="min-h-screen font-inter bg-dark text-white selection:bg-primary selection:text-white pb-0">
       {/* SEÇÃO 1 — BARRA DE URGÊNCIA */}
-      <div className="fixed top-0 left-0 w-full bg-primary z-50 py-2 px-4 text-center">
-        <p className="text-white font-bold text-[12px] md:text-[13px] uppercase tracking-wide flex items-center justify-center flex-wrap gap-2">
-          ⚡ ATENÇÃO — Essa oferta pode sair do ar a qualquer momento <span className="bg-white text-primary px-2 py-0.5 rounded tabular-nums">{formatTime(timeLeft)}</span>
+      <div className="fixed top-0 left-0 w-full bg-primary z-50 py-[10px] px-4 text-center">
+        <p className="text-white font-bold text-[13px] uppercase tracking-wide flex items-center justify-center gap-2">
+          ⚡ ATENÇÃO — Essa oferta pode sair do ar a qualquer momento <span className="bg-white text-primary px-2 py-0.5 rounded ml-1 tabular-nums">{formatTime(timeLeft)}</span>
         </p>
       </div>
 
