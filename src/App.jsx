@@ -146,7 +146,7 @@ function App() {
       {/* SEÇÃO 3 — VÍDEO DE VENDAS */}
       <section className="bg-black pb-12 w-full flex flex-col items-center">
         <FadeUp>
-          <div className="w-full max-w-[450px] mx-auto md:px-5 mt-10">
+          <div className="w-full max-w-[320px] md:max-w-[450px] mx-auto md:px-5 mt-10">
             <div className="relative w-full shadow-[0_0_48px_rgba(232,0,111,0.4)] md:rounded-[20px] overflow-hidden bg-[#111]">
               <wistia-player media-id="kdylnqipz8" aspect="0.5625"></wistia-player>
             </div>
