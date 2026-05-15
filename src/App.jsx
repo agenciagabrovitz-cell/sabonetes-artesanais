@@ -108,8 +108,9 @@ function App() {
     <div className="min-h-screen font-inter bg-dark text-white selection:bg-primary selection:text-white pb-0">
       {/* SEÇÃO 1 — BARRA DE URGÊNCIA */}
       <div className="fixed top-0 left-0 w-full bg-primary z-50 py-[10px] px-4 text-center">
-        <p className="text-white font-bold text-[13px] uppercase tracking-wide flex items-center justify-center gap-2">
-          ⚡ ATENÇÃO — Essa oferta pode sair do ar a qualquer momento <span className="bg-white text-primary px-2 py-0.5 rounded ml-1 tabular-nums">{formatTime(timeLeft)}</span>
+        <p className="text-white font-bold text-[11px] md:text-[13px] uppercase tracking-wide flex flex-wrap items-center justify-center gap-2">
+          <span>⚡ ATENÇÃO — ESSA OFERTA PODE SAIR DO AR A QUALQUER MOMENTO</span>
+          <span className="bg-white text-primary px-2 py-0.5 rounded tabular-nums font-bold">{formatTime(timeLeft)}</span>
         </p>
       </div>
 
@@ -127,7 +128,7 @@ function App() {
             RENDA EXTRA • COMECE AINDA ESTA SEMANA
           </motion.div>
           
-          <h1 className="font-oswald font-bold text-white text-[40px] md:text-[68px] leading-[1.1] max-w-[900px] mx-auto mb-8">
+          <h1 className="font-oswald font-bold text-white text-[32px] md:text-[68px] leading-[1.1] max-w-[900px] mx-auto mb-8 break-words px-2">
             Ela investiu R$50 e faturou <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-rose-400">R$400</span> em apenas 2 dias pelo WhatsApp
           </h1>
           
@@ -154,7 +155,7 @@ function App() {
           <div className="mt-8 px-5 w-full flex flex-col items-center">
             <button 
               onClick={goToCheckout}
-              className="bg-[#FFD600] text-black font-oswald font-bold text-[24px] md:text-[30px] uppercase py-[22px] px-10 rounded-full w-full md:w-auto max-w-full mx-auto shadow-[0_8px_0_#b39700] hover:shadow-[0_6px_0_#b39700] active:translate-y-[4px] active:shadow-none transition-all duration-100 mt-4 block whitespace-nowrap leading-none tracking-tight"
+              className="bg-[#FFD600] text-black font-oswald font-bold text-[20px] md:text-[30px] uppercase py-[18px] md:py-[22px] px-6 md:px-10 rounded-full w-full md:w-auto max-w-full mx-auto shadow-[0_8px_0_#b39700] hover:shadow-[0_6px_0_#b39700] active:translate-y-[4px] active:shadow-none transition-all duration-100 mt-4 block leading-tight tracking-tight"
             >
               QUERO ACESSO IMEDIATO
             </button>
@@ -455,7 +456,7 @@ function App() {
               90% OFF HOJE
             </div>
 
-            <h2 className="font-oswald text-white font-bold text-[36px] md:text-[52px] leading-tight mb-8 pt-4">
+            <h2 className="font-oswald text-white font-bold text-[28px] md:text-[52px] leading-tight mb-8 pt-4">
               O seu novo negócio começa por apenas <span className="text-primary">R$10</span>
             </h2>
 
@@ -476,15 +477,15 @@ function App() {
             <div className="flex flex-col items-center mb-12">
               <span className="text-[#555] text-[18px] line-through mb-2">De R$ 97,00</span>
               <div className="flex items-center gap-2">
-                <span className="font-oswald text-[32px] font-bold text-white self-start mt-2">R$</span>
-                <span className="font-oswald text-[100px] md:text-[130px] font-bold text-white leading-none tracking-tighter">10<span className="text-[32px]">,00</span></span>
+                <span className="font-oswald text-[28px] md:text-[32px] font-bold text-white self-start mt-2">R$</span>
+                <span className="font-oswald text-[80px] md:text-[130px] font-bold text-white leading-none tracking-tighter">10<span className="text-[28px] md:text-[32px]">,00</span></span>
               </div>
               <p className="text-primary font-bold text-[14px] mt-4 uppercase tracking-[3px]">Pagamento Único · Sem Mensalidades</p>
             </div>
 
             <button 
               onClick={goToCheckout}
-              className="bg-[#FFD600] text-black font-oswald font-bold text-[28px] md:text-[36px] uppercase py-[18px] px-10 rounded-full w-full max-w-full shadow-[0_8px_0_#b39700] hover:shadow-[0_5px_0_#b39700] active:translate-y-[3px] active:shadow-none transition-all duration-100 whitespace-nowrap leading-none"
+              className="bg-[#FFD600] text-black font-oswald font-bold text-[22px] md:text-[36px] uppercase py-[16px] md:py-[18px] px-6 md:px-10 rounded-full w-full max-w-full shadow-[0_8px_0_#b39700] hover:shadow-[0_5px_0_#b39700] active:translate-y-[3px] active:shadow-none transition-all duration-100 leading-tight"
             >
               QUERO MEU ACESSO AGORA!
             </button>
@@ -547,7 +548,7 @@ function App() {
           </p>
           <button 
             onClick={goToCheckout}
-            className="bg-accent text-black font-oswald font-bold text-[18px] md:text-[22px] uppercase py-[20px] px-8 rounded-full w-full md:w-auto max-w-full mx-auto shadow-[0_10px_30px_rgba(255,214,0,0.3)] hover:scale-105 transition-transform duration-200 mt-4 block whitespace-nowrap"
+            className="bg-accent text-black font-oswald font-bold text-[18px] md:text-[22px] uppercase py-[20px] px-8 rounded-full w-full md:w-auto max-w-full mx-auto shadow-[0_10px_30px_rgba(255,214,0,0.3)] hover:scale-105 transition-transform duration-200 mt-4 block leading-tight"
           >
             QUERO COMEÇAR AGORA
           </button>
